@@ -16,7 +16,7 @@ export const Portfolio = () => {
                     <img src={"/images/img-"+`${project.id}`+".jpg"} alt="" />
                   </div>
                   <span>{project.categories}</span>
-                  <h2><Link to={"/project/" + project.name}>{project.name}</Link></h2>
+                  <h2><Link to={"/project/" + project.id}>{project.name}</Link></h2>
                   <h3>{project.technologies}</h3>
                 </article>
             )
