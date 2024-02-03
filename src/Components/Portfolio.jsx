@@ -7,17 +7,22 @@ export const Portfolio = () => {
     <div className='page'>
       <h1 className='heading'>Portfolio</h1>
 
-      {
-        projects.map( project => {
-          return (
-              <article key={project.id}>
-                <span>{project.categories}</span>
-                <h2><Link to={"/project/" + project.name}>{project.name}</Link></h2>
-                <h3>{project.technologies}</h3>
-              </article>
-          )
-        })
-      }
+      <section className='projects'>
+        {
+          projects.map( project => {
+            return (
+                <article className='itemProject' key={project.id}>
+                  <div className='mask'>
+                    <img src={"/images/img-"+`${project.id}`+".jpg"} alt="" />
+                  </div>
+                  <span>{project.categories}</span>
+                  <h2><Link to={"/project/" + project.name}>{project.name}</Link></h2>
+                  <h3>{project.technologies}</h3>
+                </article>
+            )
+          })
+        }
+      </section>
 
     </div>
   )

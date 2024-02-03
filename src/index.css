@@ -177,4 +177,66 @@ button{
   cursor: pointer;
 }
 
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+}
+.itemProject{
+  flex-grow: 1;
+  flex-basis: 35%;
+  margin: 20px;
+}
 
+.itemProject .mask{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgb(98, 97, 97);
+}
+
+.itemProject img{
+  width: 100%;
+  margin-top: -35px;
+  transition: all 500ms;
+}
+
+
+.itemProject .mask:hover img{
+  width: 150%;
+  margin-right: 10%;
+}
+
+.itemProject span{
+  display: block;
+  color: #444;
+  margin-top: 25px;
+}
+
+.itemProject h2{
+  display: block;
+  color: #000000;
+  margin-top: 5px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.itemProject a{
+  color: #000000;
+  text-decoration: none;
+
+}
+
+.itemProject a:hover{
+  color: #f77f00;
+  transition: all 300ms;
+
+}
+
+.itemProject h3{
+ display: block;
+ color: rgb(98, 97, 97);
+ margin-top: 5px;
+ border-top: 1px solid #003049;
+ padding-top: 15px;
+ font-weight: 400;
+}
