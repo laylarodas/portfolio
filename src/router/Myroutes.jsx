@@ -1,5 +1,5 @@
 import React from 'react'
-import {Routes, Route, BrowserRouter, NavLink } from "react-router-dom";
+import {Routes, Route, BrowserRouter, NavLink, Navigate } from "react-router-dom";
 import { Index } from '../Components/Index';
 import { Portfolio } from '../Components/Portfolio';
 import { Resume } from '../Components/Resume';
@@ -16,7 +16,7 @@ export const Myroutes = () => {
         {/* CENTRAL CONTENT */}
         <section className='content'>
           <Routes>
-              <Route path='/' element={<Index />}></Route>
+              <Route path='/' element={<Navigate to="/index" />}></Route>
               <Route path='/index' element={<Index />}></Route>
               <Route path='/portfolio' element={<Portfolio />}></Route>
               <Route path='/services' element={<Index />}></Route>
