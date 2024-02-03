@@ -6,6 +6,7 @@ import { Resume } from '../Components/Resume';
 import { Contact } from '../Components/Contact';
 import { HeaderNav } from '../Components/layout/HeaderNav';
 import { Footer } from '../Components/layout/Footer';
+import { Services } from '../Components/Services';
 
 export const Myroutes = () => {
   return (
@@ -19,7 +20,7 @@ export const Myroutes = () => {
               <Route path='/' element={<Navigate to="/index" />}></Route>
               <Route path='/index' element={<Index />}></Route>
               <Route path='/portfolio' element={<Portfolio />}></Route>
-              <Route path='/services' element={<Index />}></Route>
+              <Route path='/services' element={<Services />}></Route>
               <Route path='/resume' element={<Resume />}></Route>
               <Route path='/contact' element={<Contact />}></Route>
           </Routes>
