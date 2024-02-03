@@ -83,6 +83,10 @@ body {
   min-height: 400px;
 }
 
+.header li a.actived{
+  color: #fa4529;
+}
+
 .footer{
   text-align: center;
   font-size: 14px;
@@ -94,3 +98,4 @@ body {
   line-height: 120px;
   color: #444;
 }
+
