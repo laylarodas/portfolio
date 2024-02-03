@@ -14,15 +14,17 @@ export const Myroutes = () => {
         {/* HEADER AND NAV */}
         <HeaderNav />
         {/* CENTRAL CONTENT */}
-        <Routes>
-            <Route path='/' element={<Index />}></Route>
-            <Route path='/index' element={<Index />}></Route>
-            <Route path='/portfolio' element={<Portfolio />}></Route>
-            <Route path='/services' element={<Index />}></Route>
-            <Route path='/resume' element={<Resume />}></Route>
-            <Route path='/contact' element={<Contact />}></Route>
-        </Routes>
-        <hr/>
+        <section className='content'>
+          <Routes>
+              <Route path='/' element={<Index />}></Route>
+              <Route path='/index' element={<Index />}></Route>
+              <Route path='/portfolio' element={<Portfolio />}></Route>
+              <Route path='/services' element={<Index />}></Route>
+              <Route path='/resume' element={<Resume />}></Route>
+              <Route path='/contact' element={<Contact />}></Route>
+          </Routes>
+        </section>
+        
         <Footer />
     </BrowserRouter>
   )
