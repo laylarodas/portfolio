@@ -7,6 +7,7 @@ import { Contact } from '../Components/Contact';
 import { HeaderNav } from '../Components/layout/HeaderNav';
 import { Footer } from '../Components/layout/Footer';
 import { Services } from '../Components/Services';
+import { Error } from '../Components/Error'
 
 export const Myroutes = () => {
   return (
@@ -23,6 +24,7 @@ export const Myroutes = () => {
               <Route path='/services' element={<Services />}></Route>
               <Route path='/resume' element={<Resume />}></Route>
               <Route path='/contact' element={<Contact />}></Route>
+              <Route path='*' element={<Error />}></Route>
           </Routes>
         </section>
         
